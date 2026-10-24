@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeri karya fotografi komersial, katalog produk UMKM, food and beverage, serta kontak reservasi Andi Creative Lab.">
+  <title>Portofolio Karya & Kontak Reservasi | Andi Creative Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/jpeg" href="logoandi.jpeg">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       KOMPONEN HEADER & NAVIGATION (<header> dan <nav>)
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar-container">
+      
+      <!-- Brand Profile & Logo -->
+      <a href="index.html" class="brand-wrapper" title="Kembali ke Beranda">
+        <img src="logoandi.jpeg" alt="Logo Resmi Andi Creative Lab" class="brand-logo-img">
+        <div class="brand-text-col">
+          <span class="brand-title">ANDI <span>CREATIVE</span> LAB</span>
+          <span class="brand-subtitle">Commercial &amp; Visual Photography</span>
+        </div>
+      </a>
+
+      <!-- Tombol Hamburger Mobile -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi" aria-expanded="false">
+        &#9776;
+      </button>
+
+      <!-- Navigasi Semantik (<nav>) dengan Hyperlink <a> -->
+      <nav class="main-nav" aria-label="Navigasi Utama">
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Beranda &amp; Profil</a>
+          </li>
+          <li class="nav-item">
+            <a href="layanan-harga.html" class="nav-link">Layanan &amp; Harga Sewa</a>
+          </li>
+          <li class="nav-item">
+            <a href="portofolio.html" class="nav-link active">Portofolio &amp; Kontak</a>
+          </li>
+          <li class="nav-item nav-cta">
+            <a href="#kontak" class="btn-book-nav">
+              <span>&#128172;</span> Booking Sekarang
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT: PORTOFOLIO & FORM KONTAK
+       ========================================================================== -->
+  <main>
+
+    <!-- SECTION: PORTOFOLIO GALERI -->
+    <section style="padding: 70px 0 90px 0;">
+      <div class="container">
+        
+        <div class="text-center">
+          <span class="section-tag">Galeri Visual</span>
+          <h1 class="section-title">Portofolio Karya <span class="gradient-text">Pemotretan Komersial</span></h1>
+          <p class="section-subtitle">
+            Kumpulan hasil karya fotografi untuk brand lokal, UMKM kuliner, busana editorial, dan dokumentasi event yang telah kami kerjakan dengan standar visual profesional.
+          </p>
+        </div>
+
+        <!-- Filter Kategori Portofolio -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">Semua Karya</button>
+          <button class="filter-btn" data-filter="formal">Dokumentasi &amp; Protokoler</button>
+          <button class="filter-btn" data-filter="candid">Candid &amp; Personal Branding</button>
+          <button class="filter-btn" data-filter="komunitas">Komunitas &amp; Organisasi</button>
+        </div>
+
+        <!-- Grid Galeri Lengkap -->
+        <div class="portfolio-detail-grid">
+          
+          <!-- Item 1: Andi - Dokumentasi Resmi Kedinasan & Paskibra -->
+          <article class="portfolio-card-detailed" data-category="formal">
+            <img src="images/andi_profile.jpg" alt="Dokumentasi Protokoler Kedinasan & Paskibra Andi" style="object-position: center 15%;">
+            <div class="portfolio-card-body">
+              <span class="cat-tag">Protokoler &amp; Kedinasan</span>
+              <h3>Official Uniform &amp; Protocol Documentation</h3>
+              <p>Sesi pemotretan potret resmi keprotokoleran dengan atribut seragam dinas upacara lengkap, tali kur komando emas, epolet, dan pet dinas dengan ketajaman fokus tinggi.</p>
+              <div class="portfolio-specs-box">
+                <span>&#128248; Sony A7IV + FE 85mm f/1.4 GM</span>
+                <span>&#128188; Klien: Korps Protokoler Tangerang</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: Amalia - Candid Outdoor Personal Branding -->
+          <article class="portfolio-card-detailed" data-category="candid">
+            <img src="images/portrait_candid.jpg" alt="Amalia Azzahra - Outdoor Candid Natural Portrait" style="object-position: center 20%;">
+            <div class="portfolio-card-body">
+              <span class="cat-tag">Candid &amp; Personal Branding</span>
+              <h3>Amalia Azzahra - Natural Outdoor Session</h3>
+              <p>Sesi potret personal branding luar ruangan dengan ekspresi senyum ceria, pencahayaan alami matahari lembut, serta pemisahan latar belakang bokeh yang memukau.</p>
+              <div class="portfolio-specs-box">
+                <span>&#128248; Sony FE 85mm f/1.4 GM</span>
+                <span>&#128188; Klien: Amalia Azzahra</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Amalia - Formal Institutional & Community -->
+          <article class="portfolio-card-detailed" data-category="formal">
+            <img src="images/portrait_formal.jpg" alt="Amalia Azzahra - Institutional Formal Portrait" style="object-position: center 15%;">
+            <div class="portfolio-card-body">
+              <span class="cat-tag">Formal &amp; Organisasi</span>
+              <h3>Institutional &amp; Community Portrait</h3>
+              <p>Pemotretan pose formal anggota organisasi mahasiswa dengan latar tekstur dinding batu alam andesit bertekstur kuat dan kalibrasi akurasi warna seragam biru.</p>
+              <div class="portfolio-specs-box">
+                <span>&#128248; Sony FE 50mm f/1.4 GM</span>
+                <span>&#128188; Klien: Organisasi Mahasiswa</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: Amalia - Graduation & Lifestyle Expression -->
+          <article class="portfolio-card-detailed" data-category="komunitas">
+            <img src="images/portrait_candid.jpg" alt="Amalia Azzahra - Sesi Foto Wisuda & Mahasiswa" style="object-position: center 15%;">
+            <div class="portfolio-card-body">
+              <span class="cat-tag">Komunitas &amp; Mahasiswa</span>
+              <h3>Campus Life &amp; Youth Community</h3>
+              <p>Dokumentasi gaya hidup kampus dan profil keanggotaan mahasiswa yang menangkap momen kebahagiaan dan keramahan secara autentik dan tidak kaku.</p>
+              <div class="portfolio-specs-box">
+                <span>&#128248; Sony FE 85mm f/1.4 GM</span>
+                <span>&#128188; Kategori: Youth &amp; Community</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5: Andi - Leadership & Officer Portrait -->
+          <article class="portfolio-card-detailed" data-category="komunitas">
+            <img src="images/andi_profile.jpg" alt="Andi - Kepemimpinan & Pengurus Komunitas" style="object-position: center 25%;">
+            <div class="portfolio-card-body">
+              <span class="cat-tag">Komunitas &amp; Organisasi</span>
+              <h3>Leadership Profile &amp; Cadets Member</h3>
+              <p>Potret kepemimpinan anggota komando upacara dengan komposisi tegas sudut pandang rendah (low-angle) untuk memperkuat wibawa dan karisma subjek.</p>
+              <div class="portfolio-specs-box">
+                <span>&#128248; Sony A7IV + 85mm GM</span>
+                <span>&#128188; Kategori: Leadership Profile</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 6: Amalia - Profile Wall Texture Framing -->
+          <article class="portfolio-card-detailed" data-category="candid">
+            <img src="images/portrait_formal.jpg" alt="Amalia Azzahra - Architectural Background Framing" style="object-position: center 30%;">
+            <div class="portfolio-card-body">
+              <span class="cat-tag">Personal Branding</span>
+              <h3>Architectural Texture Portraiture</h3>
+              <p>Eksplorasi garis horizontal dinding batu alam sebagai garis pemandu (leading lines) yang mempertegas fokus pengamat ke subjek utama pemotretan.</p>
+              <div class="portfolio-specs-box">
+                <span>&#128248; Sony FE 50mm f/1.4 GM</span>
+                <span>&#128188; Kategori: Personal Branding</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: KONTAK & FORM BOOKING FOTOGRAFER (<section id="kontak">)
+         ========================================================================== -->
+    <section class="contact-section" id="kontak">
+      <div class="container">
+        
+        <div class="text-center">
+          <span class="section-tag">Mulai Berkolaborasi</span>
+          <h2 class="section-title">Konsultasi &amp; Reservasi <span class="gradient-text">Jadwal Foto</span></h2>
+          <p class="section-subtitle">
+            Siap membuat foto produk usaha Anda terlihat lebih memikat? Isi formulir reservasi di bawah ini atau hubungi kami langsung via WhatsApp.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          
+          <!-- Panel Informasi Kontak Langsung -->
+          <div class="contact-info-panel">
+            <h3>Informasi Studio</h3>
+            <p>
+              Jangan ragu untuk berdiskusi terlebih dahulu mengenai konsep, estimasi jumlah produk, dan jadwal sesi pemotretan.
+            </p>
+
+            <div class="contact-methods">
+              
+              <div class="contact-item">
+                <div class="contact-icon">&#128205;</div>
+                <div class="contact-text">
+                  <h5>Lokasi Studio</h5>
+                  <p>Jl. Boulevard Kreatif No. 88, Kawasan Bisnis Gading Serpong, Tangerang 15810</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">&#128222;</div>
+                <div class="contact-text">
+                  <h5>WhatsApp Resmi (Fast Response)</h5>
+                  <p><a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">&#9993;</div>
+                <div class="contact-text">
+                  <h5>Alamat Email</h5>
+                  <p><a href="mailto:hello@andicreativelab.com">hello@andicreativelab.com</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">&#128340;</div>
+                <div class="contact-text">
+                  <h5>Jam Operasional Studio</h5>
+                  <p>Senin - Sabtu: 09:00 - 18:00 WIB<br>(Minggu &amp; Tanggal Merah khusus reservasi awal)</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Kartu Garansi Layanan -->
+            <div style="margin-top: 35px; padding: 20px; background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: var(--radius-md);">
+              <h5 style="color: var(--accent-cyan); margin-bottom: 6px; font-size: 0.95rem;">&#128737;&#65039; Jaminan Kualitas Andi Creative Lab</h5>
+              <p style="font-size: 0.85rem; color: var(--text-light); margin: 0;">
+                Garansi revisi editing warna gratis apabila hasil foto belum sesuai dengan moodboard yang telah disepakati bersama.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Formulir Booking Fotografer -->
+          <div class="booking-form-card">
+            <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Formulir Pengajuan Sewa &amp; Sesi Foto</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 25px;">
+              Formulir ini akan otomatis terhubung ke WhatsApp resmi fotografer untuk konfirmasi ketersediaan tanggal.
+            </p>
+
+            <form id="bookingForm" action="#" method="POST">
+              
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="clientName" class="form-label">Nama Lengkap Pemesan *</label>
+                  <input type="text" id="clientName" class="form-control" placeholder="Contoh: Budi Santoso" required>
+                </div>
+                <div class="form-group">
+                  <label for="clientBrand" class="form-label">Nama Brand / Usaha UMKM *</label>
+                  <input type="text" id="clientBrand" class="form-control" placeholder="Contoh: Kopi Nusantara / Skincare Glow" required>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="packageSelect" class="form-label">Pilihan Paket Sewa Fotografer *</label>
+                  <select id="packageSelect" class="form-control" required>
+                    <option value="" disabled selected>-- Pilih Paket Sewa --</option>
+                    <option value="Paket UMKM Starter (Rp 350.000)">Paket UMKM Starter - Rp 350.000</option>
+                    <option value="Paket UMKM Pro Lifestyle (Rp 750.000)">Paket UMKM Pro Lifestyle - Rp 750.000 (Rekomendasi)</option>
+                    <option value="Paket Kuliner & F&B Kafe (Rp 850.000)">Paket Kuliner &amp; F&amp;B Kafe - Rp 850.000</option>
+                    <option value="Paket Fashion Lookbook (Rp 1.100.000)">Paket Fashion Lookbook - Rp 1.100.000</option>
+                    <option value="Paket Liputan Event UMKM (Rp 1.200.000)">Paket Liputan Event UMKM - Rp 1.200.000</option>
+                    <option value="Paket Commercial Full Day (Rp 2.500.000)">Paket Commercial Full Day - Rp 2.500.000</option>
+                    <option value="Custom / Sewa Alat Tambahan">Custom Project / Sewa Alat Tambahan</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="sessionDate" class="form-label">Perkiraan Tanggal Pemotretan *</label>
+                  <input type="date" id="sessionDate" class="form-control" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="clientNotes" class="form-label">Catatan Kebutuhan &amp; Rencana Pemotretan</label>
+                <textarea id="clientNotes" class="form-control" rows="4" placeholder="Jelaskan jenis produk, jumlah varian, referensi gaya/warna yang diinginkan..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>&#128247;</span> Kirim Permintaan Reservasi ke WhatsApp Studio &rarr;
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: TANYA JAWAB UMUM (FAQ) -->
+    <section style="padding: 70px 0; background: var(--bg-surface); border-top: 1px solid var(--border-subtle);">
+      <div class="container">
+        
+        <div class="text-center">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Pertanyaan yang <span class="gradient-text">Sering Diajukan</span></h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-top: 35px;">
+          
+          <div style="background: var(--bg-card); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <h4 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 8px;">Apakah produk bisa dikirim via ekspedisi ke studio?</h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+              Sangat bisa! Lebih dari 70% klien UMKM kami dari luar kota mengirimkan sampel produk melalui JNE/SiCepat/Gojek. Kami akan memotret sesuai arahan moodboard dan mengirimkan produk kembali setelah selesai.
+            </p>
+          </div>
+
+          <div style="background: var(--bg-card); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <h4 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 8px;">Berapa lama proses editing dan penyerahan file?</h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+              Untuk paket UMKM Starter dan Pro, proses editing selesai dalam kurun waktu 3 hingga 5 hari kerja. File dikirimkan melalui link Google Drive dengan resolusi penuh tanpa kompresi.
+            </p>
+          </div>
+
+          <div style="background: var(--bg-card); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <h4 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 8px;">Apakah hak cipta komersial termasuk dalam harga sewa?</h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+              Ya! Seluruh biaya yang tertera pada tabel harga sewa sudah mencakup hak guna komersial penuh untuk kebutuhan media sosial, banner iklan, marketplace, dan website tanpa batas waktu.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       KOMPONEN FOOTER (<footer> semantic component)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <!-- Brand Info & Profile Logo -->
+        <div class="footer-brand">
+          <div class="brand-wrapper">
+            <img src="logoandi.jpeg" alt="Logo Andi Creative Lab" class="brand-logo-img">
+            <div class="brand-text-col">
+              <span class="brand-title">ANDI <span>CREATIVE</span> LAB</span>
+              <span class="brand-subtitle">Commercial &amp; Visual Photography</span>
+            </div>
+          </div>
+          <p>
+            Studio fotografi komersial profesional berbasis di Jakarta &amp; Tangerang. Membantu UMKM dan brand bertumbuh melalui karya visual bernilai tinggi.
+          </p>
+        </div>
+
+        <!-- Quick Links (Hyperlink <a>) -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Menu Navigasi</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">&bull; Beranda &amp; Profil</a></li>
+            <li><a href="layanan-harga.html">&bull; Layanan &amp; Harga Sewa</a></li>
+            <li><a href="layanan-harga.html#tabel-sewa">&bull; Tabel Biaya Sewa UMKM</a></li>
+            <li><a href="portofolio.html">&bull; Galeri Portofolio</a></li>
+            <li><a href="portofolio.html#kontak">&bull; Form Booking &amp; Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- Spesialisasi Layanan -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Kategori Layanan</h4>
+          <ul class="footer-links-list">
+            <li><a href="layanan-harga.html">&bull; Foto Katalog Produk UMKM</a></li>
+            <li><a href="layanan-harga.html">&bull; Kuliner F&amp;B &amp; Buku Menu</a></li>
+            <li><a href="layanan-harga.html">&bull; Fashion &amp; Model Editorial</a></li>
+            <li><a href="layanan-harga.html">&bull; Dokumentasi Event &amp; Bazaar</a></li>
+            <li><a href="layanan-harga.html">&bull; Sewa Alat Studio Tambahan</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak & Alamat -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Studio &amp; Kontak</h4>
+          <ul class="footer-links-list">
+            <li><span style="color: var(--accent-cyan);">&#128205;</span> Jl. Boulevard Kreatif No. 88, Tangerang</li>
+            <li><span style="color: var(--accent-cyan);">&#128222;</span> +62 812-3456-7890 (WhatsApp)</li>
+            <li><span style="color: var(--accent-cyan);">&#9993;</span> hello@andicreativelab.com</li>
+            <li><span style="color: var(--accent-cyan);">&#128340;</span> Senin - Sabtu: 09:00 - 18:00 WIB</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 <strong>Andi Creative Lab</strong>. Seluruh hak cipta dilindungi undang-undang. Project Website Statis Profil Fotografer.
+        </p>
+        <p>
+          Dibuat dengan HTML5 &amp; CSS3 Semantik | Portofolio Karya &amp; Kontak Reservasi
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script Interaktif -->
+  <script src="js/main.js"></script>
+</body>
+</html>
